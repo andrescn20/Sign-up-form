@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+<script defer src="javascript.js"></script>
 
 </head>
 <body>
     <div class="leftImage">
         <div class="logoBack">
-                <img src="/files/CalionCircularInverted.png" id="calionLogo">
+                <img src="/files/CalionCircular.png" id="calionLogo">
         </div>
 
     </div>
@@ -26,43 +27,45 @@
         <h3>Are you ready to Take Control?</h3>
 
         <form action="example.com/path" method="post">
+            <div class = 'inputs'>
+                <div class="firstName input">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Calion" name="first_name">
+                </div> 
+                    
+                <div class="lastName input">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Calandur" name="last_name">
+                </div>
 
-            <div class="firstName">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" placeholder="Calion" name="first_name">
-            </div> 
-                
-            <div class="lastName">
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" placeholder="Calandur" name="last_name">
+                <div class="email input">
+                    <label for="user_email">Email Address</label>
+                    <input type="email" id="user_email" name="email" placeholder="calion@arda.com">
+                </div>
+
+                <div class="phoneNumber input"> 
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" id="phone_number" name="phone_number" placeholder="+506 7788 3344">
+                </div>
+
+                <div class="password input">
+                    <label for="user_password">Password:</label>
+                    <input type="password" id="user_password" name="password" minlength="6">
+                </div>
+
+                <div class="confirmPassword input">
+                    <label for="confirm_password">Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
             </div>
 
-            <div class="email">
-                <label for="user_email">Email Address</label>
-                <input type="email" id="user_email" name="email" placeholder="calion@arda.com">
-            </div>
-
-            <div class="phoneNumber"> 
-                <label for="phone_number">Phone Number</label>
-                <input type="number" id="phone_number" name="phone_number" placeholder="+506 7788 3344">
-            </div>
-
-            <div class="password">
-                <label for="user_password">Password:</label>
-                <input type="password" id="user_password" name="password">
-            </div>
-
-            <div class="confirmPassword">
-                <label for="confirm_password">Password:</label>
-                <input type="password" id="confirm_password" name="confirm_password">
-            </div>
-
+            <button class="caBtn" type="submit">
+                Create Account
+            </button>
+    
         </form>
 
-        <button class="caBtn">
-            Create Account
-        </button>
-
+        
         <p> Already have an account? <a href="https://www.youtube.com/watch?v=55OJ17cHeJA" target="_blanck">Log in</a></p>
     </div>
 </body>

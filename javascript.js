@@ -1,0 +1,1 @@
+const pass = document.querySelector('#confirm_password')
