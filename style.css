@@ -1,52 +1,66 @@
 
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
 html{
     background-color: black;
 }    
 body{
-    margin-top: 15vh;
+
     font-family: 'Girassol', cursive;
     display: flex;
     justify-content: center;
+    /* border: 2px solid green; */
+    height: 98vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
-/* div {
-    border: 2px solid green;
+/* .leftImage, .rightSpace {
+    border: 2px solid red;
 } */
 
 .leftImage{
     background-image: url(/files/anvil.jpg);
-    width: 40vw;
-    height: 70vh;
+    max-width: 25vw;
     background-size: cover;
     background-position: center;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25vh;
 
 }
 
 .logoBack{
-    position: relative;
-    top: 10vh;
     background-color: rgba(77, 77, 77, 0.6);
-    height: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
 }
 
-.logo{
-    margin: 5vh;
-}
+
 #calionLogo{
-    max-width:100%;
-    max-height:100%;
+    max-width:80%;
+    max-height:auto;
+    margin: 0;
 
 }
 .rightSpace{
-    width: 64vw;
+    /* width: 64vw; */
     background-color: rgb(239, 237, 237);
     display: flex;
     flex-direction: column;
     justify-content:space-around; 
-    padding-bottom: 100px;
-    padding-top: 100px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-bottom: 150px;
+    padding-top: 15vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-grow: 3;
 }
 
 form {
@@ -54,8 +68,10 @@ form {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 5px;
-    box-shadow: 2px 2px 2px rgb(62, 62, 62), ;
+    box-shadow: 2px 3px 5px 1px rgb(62, 62, 62) ;
     padding-bottom: 10px;
+    height: 18vh;
+    overflow: scroll;
 }
 
 form div{
@@ -63,6 +79,9 @@ form div{
     display: flex;
     flex-direction: column;
     margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 0px;;
+
     
 }
 
@@ -84,7 +103,7 @@ h3,p{
   height: 48px;
   justify-content: center;
   line-height: 24px;
-  width: 25vw;
+  width: 12vw;
   padding: 0 25px;
   position: relative;
   text-align: center;
@@ -114,7 +133,7 @@ h3,p{
 }
 
 .caBtn:active {
-  background-color: #ffdeda;
+  background-color: #bdbdbd;
   outline: 0;
 }
 
@@ -126,4 +145,8 @@ h3,p{
   .caBtn {
     padding: 0 40px;
   }
+}
+p{
+    font-size: 1.2rem;
+
 }
