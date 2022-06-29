@@ -5,7 +5,7 @@ body,html {
 }
 
 html{
-    background-image: url(/files/embers.gif);
+    background-image: url(./files/embers.gif);
     background-size: cover;
 
 }    
@@ -25,7 +25,7 @@ body{
 } */
 
 .leftImage{
-    background-image: url(/files/anvil.jpg);
+    background-image: url(./files/anvil.jpg);
     max-width: 25vw;
     background-size: cover;
     background-position: center;
